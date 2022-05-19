@@ -1,2 +1,2 @@
-# FINAL450-Love-Babbar
-Solution of the DSA coding sheet prepared by the youtuber Love Babbar. All the Solution are in Java.
+# Coding Practice
+Solution of the DSA questions for placement preparation. All the Solution are in Java.
