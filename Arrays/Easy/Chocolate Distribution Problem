@@ -1,0 +1,26 @@
+https://www.geeksforgeeks.org/chocolate-distribution-problem/
+
+
+//User function Template for Java
+
+class Solution
+{
+    public long findMinDiff (ArrayList<Integer> a, int n, int m)
+    {
+        int ans = Integer.MAX_VALUE;
+        
+        Collections.sort(a);
+        
+        for(int i =0; i<=n-m; i++){
+        int minw = a.get(i); //min Window
+        int maxw = a.get(i+m-1);
+        
+        int gap = maxw - minw;
+        
+            if(gap<ans){
+                ans = gap;
+            }
+        }
+       return ans; 
+    }
+}
