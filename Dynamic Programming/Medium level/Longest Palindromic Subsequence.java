@@ -1,7 +1,13 @@
 QUESTION LINK - https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1
 VIDEO LINK - https://www.youtube.com/watch?v=wuOOOATz_IA&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=26
+THIS QUESTION IS SOLVED USING LONGEST COMMON SUBSEQUENCE, LCS REQUIRES 2 STRINGS BUT WE ARE ONLY GIVEN 1 STRING SO WE REVERSE THE STRING AND USE IT IN ORDER TO OBTAIN ANSWER
 
+FIRST STRING - S;
+SECOND STRING - s2; (reverse of S)
+
+Now we perform LCS as usual and get longest palindromic subsequence
 ========================================================ANSWER=====================================================================================
+ 
 //{ Driver Code Starts
 //Initial Template for Java
 
