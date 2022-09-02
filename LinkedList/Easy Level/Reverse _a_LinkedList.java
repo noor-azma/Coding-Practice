@@ -1,4 +1,4 @@
-QUESTION LINK - https://leetcode.com/problems/reverse-linked-list/
+QUESTION LINK - https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1
 
 =========================================================================================================================================================================
 /**
@@ -11,21 +11,24 @@ QUESTION LINK - https://leetcode.com/problems/reverse-linked-list/
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
-    public ListNode reverseList(ListNode head) {
-        if(head == null || head.next == null){
-            return head;
-        }
+class Solution
+{
+    //Function to reverse a linked list.
+    Node reverseList(Node head)
+    {
         
-        ListNode temp = head.next;
+        if(head == null) return null;
+        if(head.next == null) return head;
+        Node Second = head.next; 
+        Node temp = reverseList(head.next);
         
-        ListNode ansHead = reverseList(head.next);
-        
-        temp.next = head;
+        Second.next = head;
         head.next = null;
-        return ansHead;        
+        
+        return temp;
+        
     }
-}
+ }
 
 
 ==========================================================ITERATIVE SOLUTION============================================================================================
@@ -39,19 +42,28 @@ class Solution {
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
-    public ListNode reverseList(ListNode head) {
+class Solution
+{
+    //Function to reverse a linked list.
+    Node reverseList(Node head)
+    {
         
-        ListNode prev = null;
-        ListNode curr =  head;
-        ListNode temp;
+        Node current = head;
+        Node prev = null;
+        Node temp;
         
-        while(curr != null){
-            temp = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = temp;
+        while(current != null){
+            
+            temp = current.next;
+            current.next = prev;
+            prev = current;
+            current = temp;
+            
         }
        return prev; 
     }
+    
+    
+    
 }
+
