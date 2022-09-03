@@ -28,13 +28,13 @@ class Solution
     
     static Node midpoint(Node head){
         
-        Node fast = head;
-        Node slow = head.next;
+        Node fast = head.next;
+        Node slow = head;
         
         while(fast!=null && fast.next!= null){
-            
-            fast = fast.next.next;
             slow = slow.next;
+            fast = fast.next.next;
+            
         }
         
         return slow;
@@ -67,7 +67,7 @@ class Solution
                 t1 = t1.next;
             }
             
-            if(t2.data <= t1.data){
+            else{
                 tail.next = t2;
                 tail = t2;
                 t2 = t2.next;
