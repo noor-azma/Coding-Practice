@@ -24,8 +24,8 @@ class Solution
         
         ArrayList<Integer> ans = new ArrayList<>();
         
-        for(Map.Entry<Integer, Integer> entry : map.entrySet()){
-            ans.add(entry.getValue());
+        for(int key: map.keySet()){
+            ans.add( map.get(key) );
         }
         
         return ans;
