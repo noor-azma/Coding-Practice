@@ -28,12 +28,11 @@ class Solution
             if(curr.node.right != null) q.add(new Pair(curr.hd+1, curr.node.right));
          
         }
-        
-            ArrayList<Integer> ans = new ArrayList<>();
-            
-            for(Map.Entry<Integer, Integer> entry: map.entrySet()){
-                ans.add(entry.getValue());
-            }
+      
+         ArrayList<Integer> ans = new ArrayList<>();
+        for(int key: map.keySet()){
+            ans.add( map.get(key) );
+        }
         
         return ans;   
     }
