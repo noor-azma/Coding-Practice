@@ -1,6 +1,9 @@
 QUESTION LINK - https://practice.geeksforgeeks.org/problems/87f12e5c728d69a5322634776b54c75897d14daa/1
-Approach - 1. We take one element and subract it from the required triplet sum , then we find if there are any pairs in linked list with such that all 3 will form                 triplet sum
-           2. Use HashMap to store all the elements in it. Then take two nodes in and using two loops find the sum of the the two nodes, if the hashmap contains an               element such that it will sum all these 3 elements will form the required sum then it will we increase the count of triplets
+Approach - 1. We take one element and subract it from the required triplet sum , then we find if there are any pairs in linked list with such that all 3 will form 
+           triplet sum
+           2. Use HashMap to store all the elements in it. Then take two nodes in and using two loops find the sum of the the two nodes, if the hashmap contains an 
+           element such that it will sum all these 3 elements will form the required sum then it will we increase the count of triplets
+VIDEO - https://www.youtube.com/watch?v=jn2oe9GhkRg
   
 ======================================================================ANSWER========================================================================================
   
